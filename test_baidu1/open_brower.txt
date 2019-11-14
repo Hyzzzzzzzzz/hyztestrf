@@ -1,0 +1,12 @@
+*** Settings ***
+Library           SeleniumLibrary
+
+*** Test Cases ***
+testbaidu
+    Open Browser    http://www.baidu.com    chrome
+    Sleep    3
+    Input Text    css=#kw    test
+    Sleep    3
+    Click Element    css=#su
+    Sleep    3
+    Close All Browsers
